@@ -1,0 +1,34 @@
+// Base
+@import "./base/vars";
+@import "./base/mixin";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utility";
+
+// Blocks
+@import "./blocks/btns";
+@import "./blocks/tel";
+@import "./blocks/email";
+@import "./blocks/messangers";
+@import "./blocks/form";
+@import "./blocks/burger";
+@import "./blocks/mob-nav";
+@import "./blocks/overlay";
+@import "./blocks/form-popup";
+
+// sections
+@import "./sections/header-top";
+@import "./sections/header";
+@import "./sections/services";
+@import "./sections/implements";
+@import "./sections/improves";
+@import "./sections/why-sure";
+@import "./sections/garanty";
+@import "./sections/cases";
+@import "./sections/reviews";
+@import "./sections/about";
+@import "./sections/team";
+@import "./sections/sertificates";
+@import "./sections/costs";
+@import "./sections/collaboration";

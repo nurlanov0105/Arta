@@ -1,0 +1,44 @@
+.mob-nav {
+   position: fixed;
+   right: -1000%;
+   top: 0;
+   opacity: 0;
+   transition: 0.3s ease-out opacity;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      &.active {
+         opacity: 1;
+         right: 0;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         padding: 80px 50px 50px 50px;
+         width: 320px;
+         background-color: #000;
+
+         z-index: 4;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 3.06;
+         transition: 0.3s ease-out opacity;
+
+         /* Mobile Small */
+         @media (max-width: 374px) {
+            width: 100%;
+         }
+      }
+   }
+}
+.mob-nav__link {
+   padding: 0 30px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 3.06;
+   @include transition;
+
+   &:hover {
+      background-color: $accent-red;
+   }
+}

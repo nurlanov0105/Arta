@@ -1,0 +1,156 @@
+.garanty {
+   padding-bottom: 60px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding-bottom: 70px;
+   }
+}
+
+.garanty__title {
+   margin-bottom: 19px;
+}
+
+.garanty__row {
+   display: flex;
+   justify-content: space-between;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      flex-direction: column;
+      row-gap: 40px;
+   }
+}
+.garanty__list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 20px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      justify-content: space-around;
+   }
+}
+.garanty__item {
+   max-width: 487px;
+   padding-left: 62px;
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      background: url("../img/icons/garanty-chek.png") center / cover no-repeat;
+
+      /* Mobile*/
+      @media (max-width: 599px) {
+         top: 10px;
+      }
+
+      /* Mobile Small */
+      @media (max-width: 374px) {
+         width: 40px;
+         height: 40px;
+      }
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      max-width: 425px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      padding-left: 56px;
+   }
+}
+.garanty__item-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 2.75;
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 18px;
+   }
+}
+.garanty__item-descr {
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 1.76;
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 16px;
+   }
+}
+.garanty__contacts {
+   max-width: 618px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 21px;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      max-width: unset;
+      margin-left: 60px;
+   }
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      margin-left: 0;
+   }
+}
+.garanty__intro {
+   display: flex;
+   align-items: center;
+   column-gap: 80px;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      align-items: center;
+      column-gap: 130px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column-reverse;
+   }
+}
+.garanty__contacts-inner {
+   & > .tel {
+      line-height: 1.2;
+   }
+
+   /* Tablet Big */
+   display: flex;
+   flex-direction: column;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      align-items: center;
+   }
+}
+
+.garanty__logo {
+   width: 305px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 200px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      width: 147px;
+   }
+}

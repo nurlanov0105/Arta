@@ -1,0 +1,134 @@
+.services {
+   padding-bottom: 70px;
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      padding-bottom: 60px;
+   }
+}
+
+.services__first-title {
+   display: inline-block;
+   position: relative;
+   margin-bottom: 24px;
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -15px;
+      transform: translateX(100%);
+      width: 48px;
+      height: 48px;
+      background: url("../img/services/bitrix.png") center / cover no-repeat;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         top: 0;
+         right: 50px;
+         transform: translate(100%, 100%);
+      }
+
+      /* Mobile*/
+      @media (max-width: 599px) {
+         top: unset;
+         bottom: 0;
+         right: 0;
+         transform: unset;
+      }
+   }
+
+   /* Descktop */
+   @media (max-width: 1299px) {
+      margin-bottom: 30px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      .br {
+         display: none;
+      }
+   }
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      &::after {
+         content: unset;
+      }
+   }
+}
+
+.services__row {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 155px;
+   row-gap: 50px;
+
+   /* Descktop */
+   @media (max-width: 1299px) {
+      column-gap: 100px;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      justify-content: space-around;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      row-gap: 40px;
+   }
+}
+.services__item {
+   width: 310px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      &:nth-child(1) {
+         order: 1;
+      }
+      &:nth-child(2) {
+         order: 3;
+      }
+      &:nth-child(3) {
+         order: 5;
+      }
+      &:nth-child(4) {
+         order: 2;
+      }
+      &:nth-child(5) {
+         order: 4;
+      }
+      &:nth-child(6) {
+         order: 6;
+      }
+   }
+}
+.services__img {
+   width: 55px;
+   height: 55px;
+   margin-bottom: 6px;
+}
+.services__title {
+   min-height: 82px;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.94;
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 17px;
+   }
+}
+
+.services__descr {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.88;
+   color: $color-white;
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 15px;
+   }
+}

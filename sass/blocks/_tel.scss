@@ -1,0 +1,33 @@
+.tel {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 3.44;
+   letter-spacing: 0.11em;
+   text-decoration-color: transparent;
+   @include transition;
+
+   &:hover {
+      text-decoration: underline;
+   }
+
+   &__plus {
+      font-size: 16px;
+   }
+
+   &__active {
+      /* Tablet Big */
+      @media (max-width: 1199px) {
+         display: none;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      line-height: 2;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 18px;
+   }
+}

@@ -1,0 +1,18 @@
+.email {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 2.75;
+   letter-spacing: 0.11em;
+
+   text-decoration-color: transparent;
+   @include transition;
+
+   &:hover {
+      text-decoration: underline;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 18px;
+   }
+}
